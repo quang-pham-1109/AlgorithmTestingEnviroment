@@ -18,10 +18,12 @@ public class Dijkstra {
         }
         return min_index;
     }
-    public void printSolution(int dist[]){
-        System.out.println("Vertex \t Distance from source");
+
+    //function to output the result
+    public void printSolution(int dist[], int prev[]){
+        System.out.println("Vertex \t Distance from source \t Previous vertex");
         for (int i = 0; i < V; i++){
-            System.out.println(i + " \t" + dist[i]);
+            System.out.println(i + " \t\t " + dist[i] + " \t\t\t\t\t\t" + prev[i]);
         }
     }
 
@@ -32,6 +34,10 @@ public class Dijkstra {
         //array that holds all the nodes, will initially set as false
         //will be true if the nodes are visited
         Boolean sptSet[] = new Boolean[V];
+
+        //array that holds all the previously visited nodes
+        //will be used to backtrack the shortest path
+        int[] prev = new int[V];
 
         //Initialize all distances as infinite and sptSet array as false
         for (int i = 0; i < V; i++){
@@ -63,10 +69,11 @@ public class Dijkstra {
                     dist[u] != Integer.MAX_VALUE &&
                     dist[u] + graph[u][v] < dist[v]){
                     dist[v] = dist[u] + graph[u][v];
+                    prev[v] = u;
                 }
             }
         }
         //output solution
-        printSolution(dist);
+        printSolution(dist, prev);
     }
 }
