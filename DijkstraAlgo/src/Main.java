@@ -10,9 +10,7 @@ public class Main {
                 {0, 2, 5, 1, 0}
         };
 
-
         Dijkstra dijkstra = new Dijkstra();
-        dijkstra.dijkstra(adjMatrix, 0);
-
+        dijkstra.dijkstra(adjMatrix, 0, 4);
     }
 }

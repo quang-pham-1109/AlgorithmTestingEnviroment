@@ -3,8 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AlgorithmTestingEnviroment.iml" filepath="$PROJECT_DIR$/AlgorithmTestingEnviroment.iml" />
-      <module fileurl="file://$PROJECT_DIR$/BFS/BFS.iml" filepath="$PROJECT_DIR$/BFS/BFS.iml" />
-      <module fileurl="file://$PROJECT_DIR$/DFS/DFS.iml" filepath="$PROJECT_DIR$/DFS/DFS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BFSWithList/BFSWithList.iml" filepath="$PROJECT_DIR$/BFSWithList/BFSWithList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BFSWithMatrix/BFSWithMatrix.iml" filepath="$PROJECT_DIR$/BFSWithMatrix/BFSWithMatrix.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DFSWithList/DFSWithList.iml" filepath="$PROJECT_DIR$/DFSWithList/DFSWithList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DFSWithMatrix/DFSWithMatrix.iml" filepath="$PROJECT_DIR$/DFSWithMatrix/DFSWithMatrix.iml" />
       <module fileurl="file://$PROJECT_DIR$/DijkstraAlgo/DijkstraAlgo.iml" filepath="$PROJECT_DIR$/DijkstraAlgo/DijkstraAlgo.iml" />
     </modules>
   </component>

@@ -27,7 +27,26 @@ public class Dijkstra {
         }
     }
 
-    public void dijkstra(int graph[][], int src){
+    public void printShortestPath(int pred[], int des, int src){
+        LinkedList<Integer> path = new LinkedList<>();
+        int crawl = des;
+        path.add(crawl);
+
+        while (pred[crawl] != src){
+            path.add(pred[crawl]);
+            crawl = pred[crawl];
+        }
+        path.add(src);
+
+        Collections.reverse(path);
+
+        System.out.println("Path is: ");
+        for (Integer integer : path) {
+            System.out.print(integer + " ");
+        }
+    }
+
+    public void dijkstra(int graph[][], int src, int des){
         //output array, holds all the distances from src to node i
         int dist[] = new int[V];
 
@@ -75,5 +94,6 @@ public class Dijkstra {
         }
         //output solution
         printSolution(dist, prev);
+        printShortestPath(prev, des, src);
     }
 }
